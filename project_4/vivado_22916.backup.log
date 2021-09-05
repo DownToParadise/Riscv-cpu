@@ -1,0 +1,2411 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Jun 13 21:58:03 2021
+# Process ID: 22916
+# Current directory: E:/Pool_Birds/Project_of_vivado/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8760 E:\Pool_Birds\Project_of_vivado\project_4\project_4.xpr
+# Log file: E:/Pool_Birds/Project_of_vivado/project_4/vivado.log
+# Journal file: E:/Pool_Birds/Project_of_vivado/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Pool_Birds/Project_of_vivado/project_4/project_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 862.973 ; gain = 119.922
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/xsim.dir/tb_riscv_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 13 21:59:37 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 862.973 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_behav -key {Behavioral:sim_1:Functional:tb_riscv} -tclbatch {tb_riscv.tcl} -view {E:/Pool_Birds/Project_of_vivado/project_4/tb_riscv_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config E:/Pool_Birds/Project_of_vivado/project_4/tb_riscv_behav.wcfg
+source tb_riscv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 862.973 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/id0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 862.973 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0/reg1_i}} 
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0/reg2_i}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 883.711 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/mem_wb0/wb_wdata}} 
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0/wdata_o}} 
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0/mem_addr_o}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 883.711 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 883.711 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 883.711 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 883.711 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 883.711 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/id0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 883.711 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 883.711 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 888.285 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 919.453 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 919.453 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 919.453 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/data_ram0}} 
+WARNING: [Wavedata 42-489] Can't add object "/tb_riscv/riscv_min_soc0/data_ram0/data_mem0" to the wave window because it has 1048568 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_riscv/riscv_min_soc0/data_ram0/data_mem1" to the wave window because it has 1048568 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_riscv/riscv_min_soc0/data_ram0/data_mem2" to the wave window because it has 1048568 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_riscv/riscv_min_soc0/data_ram0/data_mem3" to the wave window because it has 1048568 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port imm_i on this module [E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v:216]
+ERROR: [VRFC 10-2063] Module <ex_mem> not found while processing module instance <ex_mem0> [E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v:227]
+ERROR: [VRFC 10-2063] Module <mem> not found while processing module instance <mem0> [E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v:245]
+ERROR: [VRFC 10-2063] Module <mem_wb> not found while processing module instance <mem_wb0> [E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v:271]
+ERROR: [VRFC 10-2063] Module <inst_rom> not found while processing module instance <inst_rom0> [E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v:40]
+ERROR: [VRFC 10-2063] Module <data_ram> not found while processing module instance <data_ram0> [E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v:46]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/xsim.dir/tb_riscv_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 14 22:56:12 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 993.520 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 993.520 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 993.520 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 993.520 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 993.520 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 993.520 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/mem0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 993.520 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 993.520 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/xsim.dir/tb_riscv_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun 14 23:09:10 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_behav -key {Behavioral:sim_1:Functional:tb_riscv} -tclbatch {tb_riscv.tcl} -view {E:/Pool_Birds/Project_of_vivado/project_4/tb_riscv_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config E:/Pool_Birds/Project_of_vivado/project_4/tb_riscv_behav.wcfg
+source tb_riscv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 993.520 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/id0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 993.520 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 993.520 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/id_ex0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 993.520 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 993.520 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/data_ram0}} 
+WARNING: [Wavedata 42-489] Can't add object "/tb_riscv/riscv_min_soc0/data_ram0/data_mem0" to the wave window because it has 1048568 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_riscv/riscv_min_soc0/data_ram0/data_mem1" to the wave window because it has 1048568 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_riscv/riscv_min_soc0/data_ram0/data_mem2" to the wave window because it has 1048568 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_riscv/riscv_min_soc0/data_ram0/data_mem3" to the wave window because it has 1048568 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 993.520 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex_mem0}} 
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/mem0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 993.520 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 993.520 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/xsim.dir/tb_riscv_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jun 15 00:41:05 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1005.457 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_riscv_behav -key {Behavioral:sim_1:Functional:tb_riscv} -tclbatch {tb_riscv.tcl} -view {E:/Pool_Birds/Project_of_vivado/project_4/tb_riscv_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config E:/Pool_Birds/Project_of_vivado/project_4/tb_riscv_behav.wcfg
+source tb_riscv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_riscv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1005.457 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1005.457 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex_mem0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1005.457 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/mem_wb0}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.043 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.043 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.043 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_riscv' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/rom.data'
+INFO: [SIM-utils-43] Exported 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/inst_rom.data'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_riscv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/cpu_pipline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/data_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sources_1/new/riscv_min_soc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_min_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.srcs/sim_1/new/tb_riscv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_riscv
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Pool_Birds/Project_of_vivado/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1ed789ec3510412e89c7b3e68cff9921 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_riscv_behav xil_defaultlib.tb_riscv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.riscv
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.data_ram
+Compiling module xil_defaultlib.riscv_min_soc
+Compiling module xil_defaultlib.tb_riscv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_riscv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1033.188 ; gain = 0.000
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/pc}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 15 01:15:46 2021...

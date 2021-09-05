@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Jun 13 21:58:03 2021
+# Process ID: 22916
+# Current directory: E:/Pool_Birds/Project_of_vivado/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8760 E:\Pool_Birds\Project_of_vivado\project_4\project_4.xpr
+# Log file: E:/Pool_Birds/Project_of_vivado/project_4/vivado.log
+# Journal file: E:/Pool_Birds/Project_of_vivado/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Pool_Birds/Project_of_vivado/project_4/project_4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/Pool_Birds/Project_of_vivado/project_4/tb_riscv_behav.wcfg
+source tb_riscv.tcl
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/id0}} 
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0/reg1_i}} 
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0/reg2_i}} 
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/mem_wb0/wb_wdata}} 
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0/wdata_o}} 
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0/mem_addr_o}} 
+relaunch_sim
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/id0}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/data_ram0}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/mem0}} 
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config E:/Pool_Birds/Project_of_vivado/project_4/tb_riscv_behav.wcfg
+source tb_riscv.tcl
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/id0}} 
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0}} 
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/id_ex0}} 
+relaunch_sim
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/data_ram0}} 
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex_mem0}} 
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/mem0}} 
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config E:/Pool_Birds/Project_of_vivado/project_4/tb_riscv_behav.wcfg
+source tb_riscv.tcl
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex0}} 
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/ex_mem0}} 
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/mem_wb0}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+add_wave {{/tb_riscv/riscv_min_soc0/riscv0/pc}} 
+close_sim

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Jun 16 14:54:43 2021
+# Process ID: 19828
+# Current directory: E:/Pool_Birds/Project_of_vivado/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15824 E:\Pool_Birds\Project_of_vivado\project_4\project_4.xpr
+# Log file: E:/Pool_Birds/Project_of_vivado/project_4/vivado.log
+# Journal file: E:/Pool_Birds/Project_of_vivado/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Pool_Birds/Project_of_vivado/project_4/project_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 805.414 ; gain = 40.082
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 16 16:34:26 2021...
